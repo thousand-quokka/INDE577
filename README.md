@@ -11,7 +11,7 @@ Programming language used in this repository is Python 3.
 Following topics are introduced in the class:
 * Supervised Learning
   * K-Nearest Neighbors
-  * Gradient Decent
+  * Gradient Descent
   * Linear Regression
   * Logistic Regression
   * Perceptron
