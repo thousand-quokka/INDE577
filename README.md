@@ -1,6 +1,5 @@
-# INDE577 Data Science and Machine Learning
 ![image](https://user-images.githubusercontent.com/120424457/231893784-0ffc7072-a500-4542-a2b1-df58528c7452.png)
-
+# INDE577 Data Science and Machine Learning
 ### Instructor: Randy R. Davila
 ### Creator: Yangqianzi Jiang
 ## Introduction
@@ -22,4 +21,5 @@ Following topics are introduced in the class:
 
 * Unsupervised Learning
   * K-Means Clustering
+  * Principle Component Analysis
 
