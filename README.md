@@ -22,4 +22,5 @@ Following topics are introduced in the class:
 * Unsupervised Learning
   * K-Means Clustering
   * Principle Component Analysis
+  * DBSCAN
 
