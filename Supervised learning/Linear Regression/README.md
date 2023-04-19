@@ -37,9 +37,11 @@ Regularization is a technique that can be easily implemented and is capable of e
 
 ### Disadvantages
 - Prone to underfitting
+
 Underfitting : A sitiuation that arises when a machine learning model fails to capture the data properly.This typically occurs when the hypothesis function cannot fit the data well.
 
 - Sensitive to outliers
+
 Outliers of a data set are anomalies or extreme values that deviate from the other data points of the distribution.Data outliers can damage the performance of a machine learning model drastically and can often lead to models with low accuracy.
 
 - Linear Regression assumes that the data is independent
