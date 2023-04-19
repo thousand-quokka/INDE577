@@ -1,4 +1,5 @@
 # Linear Regression
+![image](https://user-images.githubusercontent.com/120424457/233192936-f4989578-8e9e-436a-94b5-68628405b660.png)
 
 This project contains description and application of linear regression algorithm on the red wine dataset. 
 
@@ -17,9 +18,8 @@ where
 - $\varepsilon_i$ is the $i$ th noise term, that is, random error.
 If a model includes only one predictor variable $(p=1)$, then the model is called a simple linear regression model.
 In general, a linear regression model can be a model of the form
-$$
-y_i=\beta_0+\sum_{k=1}^K \beta_k f_k\left(X_{i 1}, X_{i 2}, \cdots, X_{i p}\right)+\varepsilon_i, \quad i=1, \cdots, n,
-$$
+
+$$y_i=\beta_0+\sum_{k=1}^K \beta_k f_k\left(X_{i 1}, X_{i 2}, \cdots, X_{i p}\right)+\varepsilon_i, \quad i=1, \cdots, n,$$
 
 
 ## Advantages and Disadvantages
