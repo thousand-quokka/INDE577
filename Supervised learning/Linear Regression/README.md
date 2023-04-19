@@ -8,9 +8,7 @@ A linear regression model describes the relationship between a dependent variabl
 
 ## Generalized Algorithm: 
 A multiple linear regression model is
-$$
-y_i=\beta_0+\beta_1 X_{i 1}+\beta_2 X_{i 2}+\cdots+\beta_p X_{i p}+\varepsilon_i, \quad i=1, \cdots, n,
-$$
+$$y_i=\beta_0+\beta_1 X_{i 1}+\beta_2 X_{i 2}+\cdots+\beta_p X_{i p}+\varepsilon_i, \quad i=1, \cdots, n,$$
 where
 - $n$ is the number of observations.
 - $y_i$ is the $i$ th response.
