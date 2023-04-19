@@ -1,7 +1,7 @@
 # Linear Regression
 ![image](https://user-images.githubusercontent.com/120424457/233192936-f4989578-8e9e-436a-94b5-68628405b660.png)
 
-This project contains description and application of linear regression algorithm on the red wine dataset. 
+This project contains description and application of linear regression algorithm on the palmer penguins dataset. 
 
 ## Introduction
 A linear regression model describes the relationship between a dependent variable, $y$, and one or more independent variables, $X$. The dependent variable is also called the response variable. Independent variables are also called explanatory or predictor variables. Continuous predictor variables are also called covariates, and categorical predictor variables are also called factors. The matrix $X$ of observations on predictor variables is usually called the design matrix. Three major uses for regression analysis are (1) determining the strength of predictors, (2) forecasting an effect, and (3) trend forecasting.
@@ -26,12 +26,15 @@ $$y_i=\beta_0+\sum_{k=1}^K \beta_k f_k\left(X_{i 1}, X_{i 2}, \cdots, X_{i p}\ri
 
 ### Advantages
 - Simple implementation
+
 Linear Regression is a very simple algorithm that can be implemented very easily to give satisfactory results.Furthermore, these models can be trained easily and efficiently even on systems with relatively low computational power when compared to other complex algorithms.Linear regression has a considerably lower time complexity when compared to some of the other machine learning algorithms.The mathematical equations of Linear regression are also fairly easy to understand and interpret.Hence Linear regression is very easy to master.
 
 - Performance on linearly seperable datasets
+
 Linear regression fits linearly seperable datasets almost perfectly and is often used to find the nature of the relationship between variables.
 
 - Overfitting can be reduced by regularization
+
 Overfitting is a situation that arises when a machine learning model fits a dataset very closely and hence captures the noisy data as well.This negatively impacts the performance of model and reduces its accuracy on the test set.
 Regularization is a technique that can be easily implemented and is capable of effectively reducing the complexity of a function so as to reduce the risk of overfitting.
 
@@ -45,20 +48,15 @@ Underfitting : A sitiuation that arises when a machine learning model fails to c
 Outliers of a data set are anomalies or extreme values that deviate from the other data points of the distribution.Data outliers can damage the performance of a machine learning model drastically and can often lead to models with low accuracy.
 
 - Linear Regression assumes that the data is independent
+
 Very often the inputs aren't independent of each other and hence any multicollinearity must be removed before applying linear regression.
 
 ## Dataset
-The red wine dataset contains 1599 samples,12 columns. Download link is: [red wine dataset](https://archive.ics.uci.edu/ml/datasets/wine+quality).
-* fixed acidity
-* volatile acidity
-* citric acid
-* residual sugar
-* chlorides
-* free sulfur dioxide
-* total sulfur dioxide
-* density
-* pH
-* sulphates
-* alcohol
-* quality
-
+The Penguins Dataset contains size measurements for three penguin species observed on three islands in the Palmer Archipelago, Antarctica. These data were collected from 2007 - 2009 by Dr. Kristen Gorman's team. It consists of 344 rows and 7 columns. The three different species of penguins are Chinstrap, Adélie, and Gentoo penguins. Download link is: [palmer penguine dataset](https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data).
+* species
+* island
+* bill_length(mm)
+* bill_depth(mm)
+* flipper_length(mm)
+* body_mass(g)
+* sex
