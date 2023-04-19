@@ -24,3 +24,16 @@ Following topics are introduced in the class:
   * Principle Component Analysis
   * DBSCAN
 
+## Tools
+* Python 3.9.16
+  * pandas
+  * numpy
+  * matplotlib
+  * scikit-learn
+  * tensorflow
+  * seaborn
+
+## References
+* Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (2nd Edition) by Aurélien Géron
+* [Dr. Davila's GitHub repository](https://github.com/RandyRDavila/Data_Science_and_Machine_Learning_Spring_2022)
+
