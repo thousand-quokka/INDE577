@@ -11,7 +11,7 @@ This project contains description and application of KNN algorithm on the red wi
 - Improvement
 
 # Dataset
-The red wine dataset contains 1599 samples,12 columns. Download link is: [red wine dataset](https://archive.ics.uci.edu/ml/datasets/wine+quality)
+The red wine dataset contains 1599 samples,12 columns. Download link is: [red wine dataset](https://archive.ics.uci.edu/ml/datasets/wine+quality).
 * fixed acidity
 * volatile acidity
 * citric acid
