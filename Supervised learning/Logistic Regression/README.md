@@ -1,6 +1,5 @@
 # Logistic Regression
-![image](https://user-images.githubusercontent.com/120424457/233527462-800fe6c3-5626-403b-a5dc-1edf9e23a5ca.png)
-
+![image](https://user-images.githubusercontent.com/120424457/233528605-794e64f3-7b19-4e71-9656-2675f8c82b68.png)
 ## Introduction
 Logistic regression is a widely used statistical method for binary classification problems. It is a type of regression analysis that is used to predict the probability of a categorical outcome based on one or more predictor variables. In other words, it is used to model the relationship between a dependent variable (which takes on discrete values) and one or more independent variables (which can be continuous or categorical).
 
