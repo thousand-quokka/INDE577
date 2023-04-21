@@ -6,22 +6,40 @@ Logistic regression is a widely used statistical method for binary classificatio
 
 ## Generalized Algorithm: 
 
-The logistic function is defined as:
+Logistic regression is a statistical model that is used to analyze the relationship between a binary dependent variable and one or more independent variables. The goal of logistic regression is to estimate the probability that the dependent variable takes on the value 1 (or "success") given the values of the independent variables.
 
-\begin{equation}
-p(x) = \frac{1}{1 + e^{-z}} 
-\end{equation}
+The logistic regression model uses a logistic function (also known as a sigmoid function) to transform the linear combination of the independent variables into a probability value between 0 and 1. The logistic function is defined as:
 
-where $p(x)$ is the probability of the binary outcome, $e$ is the mathematical constant (approximately equal to 2.71828), and $z$ is the linear combination of the independent variables:
+$$f(z) = \frac{1}{1 + e^{-z}}$$
 
-\begin{equation}
-z = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_p x_p
-\end{equation}
+
+where $z$ is the linear combination of the independent variables, and $e$ is the mathematical constant (approximately equal to 2.71828).
+
+$$z = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_p x_p$$ 
 
 where $\beta_0$ is the intercept term, $\beta_i$ are the coefficients for each independent variable $x_i$, and $p$ is the number of independent variables.
 
-The logistic regression algorithm estimates the values of the coefficients $\beta_0$, $\beta_1$, $\beta_2$, ..., $\beta_p$ that maximize the likelihood of the observed data. This is typically done using an iterative optimization algorithm such as gradient descent or Newton-Raphson. Once the coefficients are estimated, they can be used to predict the probability of the outcome for new observations with known values of the independent variables.
+The logistic function maps the linear combination of the independent variables to a probability value between 0 and 1. The probability of the dependent variable taking on the value 1 given the values of the independent variables is given by:
 
+$$P(Y = 1|X) = f(z) = \frac{1}{1 + e^{-z}}$$
+
+where $Y$ is the dependent variable (with values of 0 or 1), and $X$ is the matrix of independent variables.
+
+The logistic regression model estimates the values of the coefficients $\beta_0$, $\beta_1$, $\beta_2$, ..., $\beta_p$ that maximize the likelihood of the observed data. The likelihood function is given by:
+
+$$L(\beta_0, \beta_1, ..., \beta_p) = \prod_{i=1}^n [f(z_i)]^{y_i} [1-f(z_i)]^{1-y_i}$$
+
+where $n$ is the number of observations, $y_i$ is the observed value of the dependent variable for the $i$th observation, and $z_i$ is the linear combination of the independent variables for the $i$th observation.
+
+The maximum likelihood estimates of the coefficients can be obtained by solving the following equation:
+
+$$\frac{\partial L(\beta_0, \beta_1, ..., \beta_p)}{\partial \beta_j} = 0, \ j=0, 1, ..., p$$
+
+This equation can be solved using numerical optimization techniques such as gradient descent or Newton-Raphson.
+
+Once the coefficients are estimated, they can be used to predict the probability of the dependent variable taking on the value 1 for new observations with known values of the independent variables. The logistic regression model can also be used to test the significance of the independent variables and to identify which variables have the strongest relationship with the dependent variable.
+
+In summary, logistic regression is a statistical model that uses a logistic function to model the relationship between a binary dependent variable and one or more independent variables. The model estimates the coefficients that maximize the likelihood of the observed data and can be used to predict the probability of the dependent variable taking on the value 1 for new observations.
 
 ## Advantages and Disadvantages
 
