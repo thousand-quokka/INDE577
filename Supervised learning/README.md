@@ -31,12 +31,13 @@ The basic steps involved in supervised learning are as follows:
 6. Model Deployment: Once the model has been trained and evaluated, it can be deployed for use in production.
 
 ## Content
-- Perceptron
-- Gradient Descent
-- Linear Regression
-- Logistic Regression
-- Deep Neural Network
-- K-Nearest Neighbors
-- Decision Trees
-- Ensemble Learning and Random Forest
-- Support Vector Machines
+- [Perceptron](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Perceptron)
+- [Gradient Descent](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Gradient%20Descent)
+- [Linear Regression](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Linear%20Regression)
+- [Logistic Regression](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Logistic%20Regression)
+- [Deep Neural Network](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Deep%20Neural%20Network)
+- [K-Nearest Neighbors](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/K-Nearest%20Neighbors)
+- [Decision Trees](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Decision%20Trees)
+- [Ensemble Learning and Random Forest](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Ensemble%20Learning%20and%20Random%20Forest)
+- [Support Vector Machines](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Support%20Vector%20Machines)
+
