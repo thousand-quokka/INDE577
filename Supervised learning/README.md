@@ -1,5 +1,8 @@
 # Supervised Learning
 
+![image](https://user-images.githubusercontent.com/120424457/233553288-47bf2ef3-f440-4eb1-8b0c-2f4fec1a02cc.png)
+
+
 ## Introduction
 Supervised learning is a subfield of machine learning that involves training a model using labeled data. The goal of supervised learning is to learn a mapping function from input variables to output variables based on a set of training examples. In this readme file, we will provide an overview of supervised learning, its types, and the basic steps involved in the supervised learning process.
 
