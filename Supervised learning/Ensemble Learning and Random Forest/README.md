@@ -11,15 +11,18 @@ Random forests are a type of ensemble learning algorithm that are well-suited fo
 
 ## Generalized Algorithm: 
 
-Random forest is an ensemble learning algorithm that uses decision trees as base models. Given a training dataset $\mathcal{D} = \{(\mathbf{x}_1, y_1), (\mathbf{x}_2, y_2), \dots, (\mathbf{x}_n, y_n)\}$, where $\mathbf{x}_i \in \mathbb{R}^d$ is a feature vector and $y_i \in \mathcal{Y}$ is the corresponding label, the random forest algorithm works as follows:
+Let $X$ be a matrix of $n$ samples and $p$ features, where $X_{ij}$ denotes the value of the $j$-th feature for the $i$-th sample. Let $y$ be a vector of length $n$ containing the target variable. The random forest algorithm works as follows:
 
-1. For $m = 1$ to $M$:
-    1. Randomly sample a subset $\mathcal{S}_m$ of size $N_\text{sample}$ from $\mathcal{D}$ with replacement.
-    2. Train a decision tree $T_m$ on $\mathcal{S}_m$, where each split is chosen from a random subset of $d_\text{feat}$ features.
-2. For a test input $\mathbf{x}$, predict the label as follows:
-    $$\hat{y} = \frac{1}{M} \sum_{m=1}^M T_m(\mathbf{x})$$
+1. For each tree in the forest:
+    
+    a. Draw a bootstrap sample of size $n$ from the data, i.e., sample $n$ rows from $X$ with replacement.
+    
+    b. Randomly select $m$ features from the $p$ available features, where $m << p$.
+    
+    c. Construct a decision tree using the bootstrap sample and the selected features. At each node of the tree, split the data based on the feature that maximizes the reduction in impurity, using a criterion such as Gini impurity or entropy.
+    
+2. For a new input sample $x$, predict the target variable by averaging the predictions of all the trees in the forest, i.e., $\hat{y}(x) = \frac{1}{T}\sum_{i=1}^{T}f_i(x)$, where $T$ is the number of trees and $f_i(x)$ is the predicted value of the $i$-th tree for the input $x$.
 
-Here, $N_\text{sample}$ and $d_\text{feat}$ are hyperparameters that control the size of the random subsets used in the algorithm. The random sampling and feature selection help to decorrelate the trees and reduce overfitting, while the averaging of the predictions helps to improve the overall accuracy of the model.
 
 ## Advantages and Disadvantages
 
