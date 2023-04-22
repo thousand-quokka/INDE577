@@ -32,7 +32,8 @@ If the data is not linearly separable, SVM can still be used by introducing slac
 $$\begin{align}
 \text{minimize } & \frac{1}{2}\|w\|^2 + C\sum_{i=1}^{n}\xi_i \\
 \text{subject to } & y_i(w^Tx_i - b) \geq 1 - \xi_i \text{, for } i=1,2,...,n \\
-& \xi_i \geq 0 \text{, for } i=1,2,...,n$$
+& \xi_i \geq 0 \text{, for } i=1,2,...,n
+\end{align}$$
 
 where $C$ is a hyperparameter that controls the tradeoff between maximizing the margin and minimizing the sum of slack variables.
 
