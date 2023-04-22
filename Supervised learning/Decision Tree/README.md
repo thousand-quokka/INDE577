@@ -11,17 +11,26 @@ The goal of the decision tree is to create a model that can accurately predict t
 
 ## Generalized Algorithm: 
 
-Suppose we have a dataset $\mathcal{D}$ consisting of $n$ observations, where each observation has $m$ features and a corresponding class or target variable $y$. We want to build a decision tree that can accurately predict the target variable based on the features.
+Given a training dataset $\mathcal{D} = \{(x_i, y_i)\}_{i=1}^n$, where $x_i = (x_{i1}, x_{i2}, ..., x_{im})$ represents the $m$ features of the $i$-th observation and $y_i$ is its corresponding label, the decision tree algorithm works as follows:
 
-The decision tree algorithm works by recursively partitioning the data into subsets based on the values of a feature. At each node of the tree, we choose a feature $f$ and a threshold $t$, and split the data into two subsets $\mathcal{D}_\text{left}$ and $\mathcal{D}_\text{right}$ based on whether each observation's value of feature $f$ is less than or greater than $t$. The algorithm then creates two child nodes corresponding to these subsets, and continues recursively partitioning the data until some stopping criterion is met.
+1. Initialize a root node containing all the observations in $\mathcal{D}$.
 
-To determine the optimal feature and threshold for each node, we use a splitting criterion that measures the quality of the split. One common criterion is the Gini impurity, defined as:
+2. For each node, select the best feature $f$ and a threshold $t$ that minimize a splitting criterion $C(\mathcal{D}, f, t)$.
 
-$$ \text{Gini}(\mathcal{D}) = 1 - \sum_{i=1}^k p_i^2 $$
+3. Split the node into two child nodes $\mathcal{D}_\text{left}$ and $\mathcal{D}_\text{right}$ according to the selected feature and threshold.
 
-where $k$ is the number of classes, and $p_i$ is the proportion of observations in $\mathcal{D}$ that belong to class $i$. The Gini impurity is a measure of how "impure" the data is with respect to the class labels. A split that results in two subsets with lower impurity is considered a better split.
+4. Recursively repeat steps 2 and 3 for each child node until a stopping criterion is met, such as a maximum tree depth, minimum number of samples per leaf, or having all samples in a leaf belong to the same class.
 
-To find the optimal split, we evaluate the splitting criterion for each possible feature and threshold combination, and choose the one that results in the lowest impurity. This process is repeated at each node until we reach a stopping criterion, such as reaching a maximum tree depth, having a minimum number of samples per leaf, or having all samples in a leaf belong to the same class.
+To select the best feature and threshold at each node, we need to define a splitting criterion $C(\mathcal{D}, f, t)$ that measures the quality of the split. There are several popular splitting criteria, including:
+
+- Gini impurity: $\text{Gini}(\mathcal{D}) = 1 - \sum_{i=1}^k p_i^2$, where $k$ is the number of classes and $p_i$ is the proportion of observations in $\mathcal{D}$ that belong to class $i$.
+
+- Information gain: $\text{IG}(\mathcal{D}, f) = \text{H}(\mathcal{D}) - \sum_{v \in \text{values}(f)} \frac{|\mathcal{D}_v|}{|\mathcal{D}|}\text{H}(\mathcal{D}_v)$, where $\text{H}(\mathcal{D})$ is the entropy of $\mathcal{D}$ and $\mathcal{D}_v$ is the subset of observations in $\mathcal{D}$ where feature $f$ has value $v$.
+
+- Variance reduction: $\text{VR}(\mathcal{D}, f, t) = \text{Var}(\mathcal{D}) - \sum_{i \in \{0,1\}} \frac{|\mathcal{D}_i|}{|\mathcal{D}|} \text{Var}(\mathcal{D}_i)$, where $\text{Var}(\mathcal{D})$ is the variance of the labels in $\mathcal{D}$ and $\mathcal{D}_i$ is the subset of observations in $\mathcal{D}$ where feature $f$ is less than or greater than $t$.
+
+To find the best feature and threshold, we need to evaluate the splitting criterion for each possible feature and threshold combination and choose the one that results in the highest information gain, greatest variance reduction or lowest Gini impurity.
+
 
 ### Advantages
 
