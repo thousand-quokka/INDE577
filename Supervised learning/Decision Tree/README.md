@@ -11,25 +11,12 @@ The goal of the decision tree is to create a model that can accurately predict t
 
 ## Generalized Algorithm: 
 
-Given a training dataset $\mathcal{D} = \{(x_i, y_i)\}_{i=1}^n$, where $x_i = (x_{i1}, x_{i2}, ..., x_{im})$ represents the $m$ features of the $i$-th observation and $y_i$ is its corresponding label, the decision tree algorithm works as follows:
+Suppose we have a dataset $\mathcal{D}$ consisting of $n$ observations, where each observation has $m$ features and a corresponding class or target variable $y$. Here are the steps for building a decision tree:
 
-1. Initialize a root node containing all the observations in $\mathcal{D}$.
-
-2. For each node, select the best feature $f$ and a threshold $t$ that minimize a splitting criterion $C(\mathcal{D}, f, t)$.
-
-3. Split the node into two child nodes $\mathcal{D}_\text{left}$ and $\mathcal{D}_\text{right}$ according to the selected feature and threshold.
-
-4. Recursively repeat steps 2 and 3 for each child node until a stopping criterion is met, such as a maximum tree depth, minimum number of samples per leaf, or having all samples in a leaf belong to the same class.
-
-To select the best feature and threshold at each node, we need to define a splitting criterion $C(\mathcal{D}, f, t)$ that measures the quality of the split. There are several popular splitting criteria, including:
-
-- Gini impurity: $\text{Gini}(\mathcal{D}) = 1 - \sum_{i=1}^k p_i^2$, where $k$ is the number of classes and $p_i$ is the proportion of observations in $\mathcal{D}$ that belong to class $i$.
-
-- Information gain: $\text{IG}(\mathcal{D}, f) = \text{H}(\mathcal{D}) - \sum_{v \in \text{values}(f)} \frac{|\mathcal{D}_v|}{|\mathcal{D}|}\text{H}(\mathcal{D}_v)$, where $\text{H}(\mathcal{D})$ is the entropy of $\mathcal{D}$ and $\mathcal{D}_v$ is the subset of observations in $\mathcal{D}$ where feature $f$ has value $v$.
-
-- Variance reduction: $\text{VR}(\mathcal{D}, f, t) = \text{Var}(\mathcal{D}) - \sum_{i \in \{0,1\}} \frac{|\mathcal{D}_i|}{|\mathcal{D}|} \text{Var}(\mathcal{D}_i)$, where $\text{Var}(\mathcal{D})$ is the variance of the labels in $\mathcal{D}$ and $\mathcal{D}_i$ is the subset of observations in $\mathcal{D}$ where feature $f$ is less than or greater than $t$.
-
-To find the best feature and threshold, we need to evaluate the splitting criterion for each possible feature and threshold combination and choose the one that results in the highest information gain, greatest variance reduction or lowest Gini impurity.
+1. If a stopping criterion is met, such as reaching a maximum tree depth, having a minimum number of samples per leaf, or having all samples in a leaf belong to the same class, create a leaf node with the majority class or average value of the target variable.
+2. Otherwise, select the optimal feature and threshold for splitting the data based on a splitting criterion, such as the Gini impurity or information gain.
+3. Create a decision node with the selected feature and threshold, and split the data into two subsets $\mathcal{D}_\text{left}$ and $\mathcal{D}_\text{right}$ based on whether each observation's value of feature $f$ is less than or greater than $t$.
+4. Recursively apply the algorithm to each subset, creating child nodes and splitting the data further until the stopping criterion is met.
 
 
 ### Advantages
