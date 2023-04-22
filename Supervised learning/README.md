@@ -37,7 +37,7 @@ The basic steps involved in supervised learning are as follows:
 - [Logistic Regression](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Logistic%20Regression)
 - [Deep Neural Network](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Deep%20Neural%20Network)
 - [K-Nearest Neighbors](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/K-Nearest%20Neighbors)
-- [Decision Trees](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Decision%20Trees)
+- [Decision Tree](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Decision%20Tree)
 - [Ensemble Learning and Random Forest](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Ensemble%20Learning%20and%20Random%20Forest)
 - [Support Vector Machines](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Support%20Vector%20Machines)
 
