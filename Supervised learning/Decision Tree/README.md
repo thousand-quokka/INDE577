@@ -15,7 +15,7 @@ Suppose we have a dataset $\mathcal{D}$ consisting of $n$ observations, where ea
 
 1. If a stopping criterion is met, such as reaching a maximum tree depth, having a minimum number of samples per leaf, or having all samples in a leaf belong to the same class, create a leaf node with the majority class or average value of the target variable.
 2. Otherwise, select the optimal feature and threshold for splitting the data based on a splitting criterion, such as the Gini impurity or information gain.
-3. Create a decision node with the selected feature and threshold, and split the data into two subsets $\mathcal{D}_\text{left}$ and $\mathcal{D}_\text{right}$ based on whether each observation's value of feature $f$ is less than or greater than $t$.
+3. Create a decision node with the selected feature and threshold, and split the data into two subsets based on whether each observation's value of feature $f$ is less than or greater than $t$.
 4. Recursively apply the algorithm to each subset, creating child nodes and splitting the data further until the stopping criterion is met.
 
 
