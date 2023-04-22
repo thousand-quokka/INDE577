@@ -14,8 +14,8 @@ Following topics are introduced in the class:
   * Linear Regression
   * Logistic Regression
   * Perceptron
-  * Multi-Layer Perceptron
-  * Decision Tree
+  * Deep Neural Network
+  * Decision Trees
   * Ensemble Learning and Random Forest
 
 * Unsupervised Learning
