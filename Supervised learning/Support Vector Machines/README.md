@@ -10,24 +10,20 @@ SVM is a supervised learning algorithm, which means that it learns to classify d
 
 Support Vector Machines (SVM) is a supervised learning algorithm that seeks to find a hyperplane which best separates two classes in a dataset. The hyperplane is represented by the equation:
 
-\begin{equation}
-w^Tx - b = 0
-\end{equation}
+$$w^Tx - b = 0$$
 
 where $w$ is a weight vector, $x$ is the input vector, and $b$ is the bias.
 
 The SVM algorithm seeks to maximize the margin between the two classes, which is the distance between the hyperplane and the closest point from each class. The margin can be expressed as:
 
-\begin{equation}
-\frac{2}{\|w\|} 
-\end{equation}
+$$\frac{2}{\|w\|} $$
 
 where $\|w\|$ is the Euclidean norm of the weight vector. Therefore, the SVM optimization problem can be formulated as:
 
-\begin{align}
+$$\begin{align}
 \text{minimize } & \frac{1}{2}\|w\|^2 \\
 \text{subject to } & y_i(w^Tx_i - b) \geq 1 \text{, for } i=1,2,...,n
-\end{align}
+\end{align}$$
 
 where $y_i$ is the class label of the $i$-th training example, and $n$ is the number of training examples. The inequality constraint ensures that each training example is on the correct side of the hyperplane.
 
