@@ -1,7 +1,6 @@
 ![image](https://user-images.githubusercontent.com/120424457/231893784-0ffc7072-a500-4542-a2b1-df58528c7452.png)
 # INDE577 Data Science and Machine Learning
 ### Instructor: Randy R. Davila
-### Creator: Yangqianzi Jiang
 ## Introduction
 This github repository is a collection of machine learning algorithms from INDE577 course. The course covers unsupervised learning, supervised learning and optimization methods.
 
