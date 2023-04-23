@@ -61,15 +61,15 @@ The Breast Cancer Wisconsin (Diagnostic) Dataset is a widely used dataset for cl
 The dataset contains 30 features, including mean, standard error, and worst (largest) values for the following ten characteristics of each cell nucleus:
 
 * Radius
-2. Texture
-3. Perimeter
-4. Area
-5. Smoothness
-6. Compactness
-7. Concavity
-8. Concave points
-9. Symmetry
-10. Fractal dimension
+* Texture
+* Perimeter
+* Area
+* Smoothness
+* Compactness
+* Concavity
+* Concave points
+* Symmetry
+* Fractal dimension
 
 Each feature is represented as a floating-point number, and there are no missing values in the dataset.
 
