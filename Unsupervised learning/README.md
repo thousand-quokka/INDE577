@@ -13,17 +13,23 @@ Unsupervised learning is used in a variety of applications, including customer s
 
 ## Basic Steps in Unsupervised Learning
 
-1. Data preprocessing: The first step is to clean and preprocess the data, which may involve removing missing or irrelevant data, scaling the features, or encoding categorical variables.
+1. Data preprocessing: 
+The first step is to clean and preprocess the data, which may involve removing missing or irrelevant data, scaling the features, or encoding categorical variables.
 
-2. Feature selection or extraction: In some cases, it may be necessary to select or extract the most important features or variables in the data to reduce its dimensionality and simplify the analysis.
+2. Feature selection or extraction: 
+In some cases, it may be necessary to select or extract the most important features or variables in the data to reduce its dimensionality and simplify the analysis.
 
-3. Choosing an appropriate algorithm: The next step is to select an appropriate unsupervised learning algorithm, such as clustering, dimensionality reduction, or anomaly detection, based on the characteristics of the data and the problem at hand.
+3. Choosing an appropriate algorithm: 
+The next step is to select an appropriate unsupervised learning algorithm, such as clustering, dimensionality reduction, or anomaly detection, based on the characteristics of the data and the problem at hand.
 
-4. Model training: Once the algorithm is selected, the model is trained on the data using unsupervised learning techniques to discover patterns, relationships, or clusters in the data.
+4. Model training: 
+Once the algorithm is selected, the model is trained on the data using unsupervised learning techniques to discover patterns, relationships, or clusters in the data.
 
-5. Model evaluation: After the model is trained, it is evaluated using various metrics, such as clustering accuracy, silhouette score, or reconstruction error, depending on the type of unsupervised learning algorithm used.
+5. Model evaluation: 
+After the model is trained, it is evaluated using various metrics, such as clustering accuracy, silhouette score, or reconstruction error, depending on the type of unsupervised learning algorithm used.
 
-6. Interpretation of results: Finally, the results of the unsupervised learning analysis are interpreted and used to gain insights into the underlying structure of the data and to guide further analysis or decision-making.
+6. Interpretation of results: 
+Finally, the results of the unsupervised learning analysis are interpreted and used to gain insights into the underlying structure of the data and to guide further analysis or decision-making.
 
 
 ## Content
