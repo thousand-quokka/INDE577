@@ -17,7 +17,9 @@ The algorithm works as follows:
 
 1. For each point $\mathbf{x}_i$, the set of points within a distance $\epsilon$ of $\mathbf{x}_i$ is defined as the neighborhood $N(\mathbf{x}_i)$:
 
-$$ N(\mathbf{x}_i) = { \mathbf{x}_j \in D \  | \  dist(\mathbf{x}_i, \mathbf{x}_j) \leq \epsilon } $$
+$$ \begin{equation}
+N\left(\mathbf{x}_i\right)=\left\{\mathbf{x}_j \in D \mid \operatorname{dist}\left(\mathbf{x}_i, \mathbf{x}_j\right) \leq \epsilon\right\}
+\end{equation} $$
 
 
 where $D$ is the dataset and $dist(\cdot, \cdot)$ is the distance function.
