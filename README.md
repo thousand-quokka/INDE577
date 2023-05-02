@@ -9,8 +9,8 @@ Programming language used in this repository is Python 3.
 ## Content
 Following topics are introduced in the class:
 * Supervised Learning
-  - [Perceptron](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Perceptron)
-  - [Gradient Descent](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Gradient%20Descent)
+  *[Perceptron](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Perceptron)
+  *[Gradient Descent](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Gradient%20Descent)
   - [Linear Regression](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Linear%20Regression)
   - [Logistic Regression](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Logistic%20Regression)
   - [Deep Neural Network](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Deep%20Neural%20Network)
