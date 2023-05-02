@@ -18,6 +18,7 @@ Suppose we have a dataset $\mathcal{D}$ consisting of $n$ observations, where ea
 3. Create a decision node with the selected feature and threshold, and split the data into two subsets based on whether each observation's value of feature $f$ is less than or greater than $t$.
 4. Recursively apply the algorithm to each subset, creating child nodes and splitting the data further until the stopping criterion is met.
 
+## Advantages and Disadvantages
 
 ### Advantages
 
