@@ -8,7 +8,7 @@ Programming language used in this repository is Python 3.
 
 ## Content
 Following topics are introduced in the class:
-* [Supervised Learning](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning)
+- [Supervised Learning](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning)
   -[Perceptron](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Perceptron)
   -[Gradient Descent](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Gradient%20Descent)
   - [Linear Regression](https://github.com/thousand-quokka/INDE577/tree/main/Supervised%20learning/Linear%20Regression)
@@ -21,7 +21,7 @@ Following topics are introduced in the class:
 
 
 
-* [Unsupervised Learning](https://github.com/thousand-quokka/INDE577/tree/main/Unsupervised%20learning)
+- [Unsupervised Learning](https://github.com/thousand-quokka/INDE577/tree/main/Unsupervised%20learning)
   -[K-Means Clustering](https://github.com/thousand-quokka/INDE577/tree/main/Unsupervised%20learning/K-Means%20Clustering)
   -[DBSCAN](https://github.com/thousand-quokka/INDE577/tree/main/Unsupervised%20learning/DBSCAN)
   -[PCA](https://github.com/thousand-quokka/INDE577/tree/main/Unsupervised%20learning/PCA)
