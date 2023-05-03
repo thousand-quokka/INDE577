@@ -26,6 +26,9 @@ $$\begin{align}
 \hat{y}_{\text {new }}=\phi\left(\mathbf{w} \cdot \mathbf{x}_{\text {new }}+b\right)
 \end{align}$$
 
+<img width="183" alt="image" src="https://user-images.githubusercontent.com/120424457/235818776-9b3b51cd-cd1c-41da-8560-064ce56634b0.png">
+
+
 This is the basic algorithm for a single-layer perceptron. For multi-layer perceptrons, the process is similar but with additional layers and activation functions.
 
 ## Advantages and Disadvantages
