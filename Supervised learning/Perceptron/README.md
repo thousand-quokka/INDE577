@@ -22,11 +22,9 @@ $$b = b + \eta e$$
 
 This process is repeated for each input in the training set until the algorithm converges, meaning that it is no longer making any errors or is making only a small number of errors. The final output of the perceptron for a new input $\mathbf{x}_\text{new}$ can be computed as:
 
-$$\begin{align}
-
+$$
 \hat{y}_\text{new} = \phi(\mathbf{w} \cdot \mathbf{x}_\text{new} + b)
-
-\end{align}$$
+$$
 
 This is the basic algorithm for a single-layer perceptron. For multi-layer perceptrons, the process is similar but with additional layers and activation functions.
 
