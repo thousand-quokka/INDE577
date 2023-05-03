@@ -26,7 +26,7 @@ $$\begin{align}
 
 \hat{y}_\text{new} = \phi(\mathbf{w} \cdot \mathbf{x}_\text{new} + b)
 
-\end{alingn}$$
+\end{align}$$
 
 This is the basic algorithm for a single-layer perceptron. For multi-layer perceptrons, the process is similar but with additional layers and activation functions.
 
