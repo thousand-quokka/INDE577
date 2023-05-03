@@ -24,10 +24,9 @@ This process is repeated for each input in the training set until the algorithm 
 
 \begin{equation}
 $$\hat{y}_\text{new} = \phi(\mathbf{w} \cdot \mathbf{x}_\text{new} + b)$$
-\end
+\end{equation}
 
 This is the basic algorithm for a single-layer perceptron. For multi-layer perceptrons, the process is similar but with additional layers and activation functions.
-
 
 ## Advantages and Disadvantages
 
