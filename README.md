@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/120424457/231893784-0ffc7072-a500-4542-a2b1-df58528c7452.png)
+![image](https://github.com/thousand-quokka/INDE577/assets/120424457/e00c461f-740c-4cfa-b157-e5065846686f)
 # INDE577 Data Science and Machine Learning
 ### Instructor: Randy R. Davila
 ## Introduction
